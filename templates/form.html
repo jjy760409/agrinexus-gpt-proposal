@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>AI 제안서 생성</title></head>
+<body>
+  <h2>AgriNexus AI 제안서 생성기</h2>
+  <form method="POST" action="/generate">
+    <label>고객명: <input type="text" name="client" required></label><br><br>
+    <label>작물: <input type="text" name="crop" required></label><br><br>
+    <label>면적(m²): <input type="number" name="area" required></label><br><br>
+    <label>지역: <input type="text" name="location" required></label><br><br>
+    <label>재배 목적: <input type="text" name="purpose" required></label><br><br>
+    <button type="submit">제안서 생성 및 PDF 다운로드</button>
+  </form>
+</body>
+</html>
