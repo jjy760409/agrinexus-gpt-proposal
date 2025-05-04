@@ -1,31 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<style>
-body {
-  font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;
-  padding: 40px;
-  color: #333;
-}
-h1 { color: #007B77; }
-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #999;
-}
-</style>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: "Malgun Gothic", sans-serif; padding: 40px; color: #333; }
+    h1 { color: #007B77; }
+    footer { margin-top: 40px; font-size: 0.9em; color: #999; }
+  </style>
 </head>
 <body>
   <h1>AgriNexus World 제안서</h1>
   <p><strong>고객명:</strong> {{ client }}</p>
   <p><strong>작물:</strong> {{ crop }} / <strong>면적:</strong> {{ area }} m²</p>
   <p><strong>지역:</strong> {{ location }} / <strong>목적:</strong> {{ purpose }}</p>
+  <h3>📌 요약 요점 (자동 생성)</h3>
+  <p>{{ summary }}</p>
   <section>
-    <h3>📄 AI 제안 내용</h3>
+    <h3>📄 전체 제안 내용</h3>
     <p>{{ content }}</p>
   </section>
-  <footer>이 문서는 GPT 기반으로 자동 생성되었습니다.</footer>
+  <footer>본 문서는 GPT 기반으로 자동 생성되었습니다.</footer>
 </body>
 </html>

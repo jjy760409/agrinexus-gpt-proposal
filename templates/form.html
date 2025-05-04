@@ -1,16 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="UTF-8"><title>AI 제안서 생성</title></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriNexus 제안서 생성기</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 500px; margin: auto; }
+    input, select { width: 100%; padding: 10px; margin-bottom: 15px; }
+    button { padding: 12px 20px; font-size: 16px; width: 100%; }
+  </style>
+</head>
 <body>
   <h2>AgriNexus AI 제안서 생성기</h2>
   <form method="POST" action="/generate">
-    <label>고객명: <input type="text" name="client" required></label><br><br>
-    <label>작물: <input type="text" name="crop" required></label><br><br>
-    <label>면적(m²): <input type="number" name="area" required></label><br><br>
-    <label>지역: <input type="text" name="location" required></label><br><br>
-    <label>재배 목적: <input type="text" name="purpose" required></label><br><br>
-    <button type="submit">제안서 생성 및 PDF 다운로드</button>
+    <input type="text" name="client" placeholder="고객명" required>
+    <input type="text" name="crop" placeholder="작물" required>
+    <input type="number" name="area" placeholder="면적(m²)" required>
+    <input type="text" name="location" placeholder="지역" required>
+    <input type="text" name="purpose" placeholder="재배 목적" required>
+    <input type="email" name="email" placeholder="이메일 주소" required>
+    <select name="language">
+      <option value="Korean">한국어</option>
+      <option value="English">English</option>
+      <option value="Chinese">中文</option>
+    </select>
+    <button type="submit">제안서 생성 + PDF 다운로드 + 이메일 전송</button>
   </form>
 </body>
 </html>
