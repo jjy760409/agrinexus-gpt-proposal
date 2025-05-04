@@ -1,0 +1,53 @@
+body {
+  font-family: 'Pretendard', sans-serif;
+  margin: 0;
+  background-color: #F5F7FA;
+  color: #333;
+}
+header {
+  background: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #0066FF;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #e6f0ff, #ffffff);
+}
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #0066FF;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.partners {
+  text-align: center;
+  padding: 60px 20px;
+}
+.logos img {
+  height: 40px;
+  margin: 10px 20px;
+  vertical-align: middle;
+}
+footer {
+  background: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+.sns img {
+  height: 24px;
+  margin: 0 10px;
+}
